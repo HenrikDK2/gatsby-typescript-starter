@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/**/*"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2021",
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
+  },
+  "exclude": [
+    "node_modules",
+    "node_modules/**/*",
+    "node_modules/**/**/*",
+    "node_modules/**/**/**/*"
+  ]
+}
