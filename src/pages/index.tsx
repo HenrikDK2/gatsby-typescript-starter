@@ -2,6 +2,7 @@ import * as React from "react";
 import { styled } from "goober";
 import { StaticImage } from "gatsby-plugin-image";
 import Seo from "../components/Seo";
+
 const Heading = styled("h2")`
   text-align: center;
   margin-top: 0;
