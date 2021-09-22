@@ -16,6 +16,7 @@ const Heading = styled("h2")`
 const imageStyle: React.CSSProperties = {
   margin: "0 auto",
   width: "256px",
+  height: "256px",
   display: "block",
 };
 
