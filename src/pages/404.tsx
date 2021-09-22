@@ -28,6 +28,7 @@ const NotFoundPage: React.FunctionComponent = () => (
     <Heading>
       Page not found
       <span role="img" aria-label="Sad smiley">
+        {" "}
         😢
       </span>
     </Heading>
