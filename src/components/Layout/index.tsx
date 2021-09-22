@@ -1,7 +1,7 @@
 import * as React from "react";
 import { styled } from "goober";
-import "./global.css";
 import "@fontsource/roboto";
+import "./global.css";
 
 const Copyright = styled("small")`
   font-weight: 300;
