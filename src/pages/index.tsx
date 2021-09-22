@@ -24,6 +24,7 @@ const HomePage: React.FC = () => (
   <Seo title="Homepage">
     <Heading>Gatsby Typescript Starter</Heading>
     <StaticImage
+      onDragStart={(e) => e.preventDefault()}
       style={imageStyle}
       placeholder="blurred"
       src="../images/gatsby.png"

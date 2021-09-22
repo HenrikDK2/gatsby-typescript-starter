@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import faviconSrc from "../../assets/favicon.svg";
+import Layout from "../Layout";
+
 type Props = {
   title: string;
   favicon?: string;
@@ -21,7 +23,7 @@ const Seo: React.FC<Props> = ({ title, description, tags, favicon, children }) =
       <meta name="author" content="Author Name" />
       <link rel="shortcut icon" type="image/png" href={faviconSrc || favicon} />
     </Helmet>
-    {children}
+    <Layout>{children}</Layout>
   </>
 );
 export default Seo;
