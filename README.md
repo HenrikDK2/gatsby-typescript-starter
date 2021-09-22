@@ -7,7 +7,7 @@ Check out starter online https://gatsby-typescript-template.netlify.app/
 
 ## Getting started
 
-```
+```bash
 git clone https://github.com/HenrikDK2/gatsby-typescript-starter folder-name
 
 cd folder-name
