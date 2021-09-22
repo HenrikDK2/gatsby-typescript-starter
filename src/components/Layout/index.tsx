@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { styled } from "goober";
 import "./global.css";
 
@@ -10,7 +10,11 @@ const Copyright = styled("small")`
   display: block;
 `;
 
-const Layout: React.FC = ({ children }) => {
+interface Props {
+  children: any;
+}
+
+const Layout: React.FunctionComponent<Props> = ({ children }) => {
   const year = new Date().getFullYear();
 
   return (

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { styled } from "goober";
 import Seo from "../components/Seo";
 
@@ -10,7 +10,7 @@ const Heading = styled("h2")`
   transform: translate(-50%, -50%);
 `;
 
-const NotFoundPage: React.FC = () => (
+const NotFoundPage: React.FunctionComponent = () => (
   <Seo title="404">
     <Heading>Page not found</Heading>
   </Seo>

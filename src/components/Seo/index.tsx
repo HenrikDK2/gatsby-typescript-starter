@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import faviconSrc from "../../assets/favicon.svg";
 import Layout from "../Layout";
@@ -10,7 +10,7 @@ type Props = {
   tags?: string;
 };
 
-const Seo: React.FC<Props> = ({ title, description, tags, favicon, children }) => (
+const Seo: React.FunctionComponent<Props> = ({ title, description, tags, favicon, children }) => (
   <>
     <Helmet
       htmlAttributes={{

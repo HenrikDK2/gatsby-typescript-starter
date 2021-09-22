@@ -13,6 +13,12 @@ const Heading = styled("h2")`
   }
 `;
 
+const Link = styled("a")`
+  display: block;
+  margin-top: 0.5rem;
+  text-align: center;
+`;
+
 const imageStyle: React.CSSProperties = {
   margin: "0 auto",
   width: "256px",
@@ -20,7 +26,7 @@ const imageStyle: React.CSSProperties = {
   display: "block",
 };
 
-const HomePage: React.FC = () => (
+const HomePage: React.FunctionComponent = () => (
   <Seo title="Homepage">
     <Heading>Gatsby Typescript Starter</Heading>
     <StaticImage
@@ -30,6 +36,7 @@ const HomePage: React.FC = () => (
       src="../images/gatsby.png"
       alt="Gatsby logo"
     />
+    <Link href="https://github.com/HenrikDK2/gatsby-typescript-starter">Link to Github repo</Link>
   </Seo>
 );
 
