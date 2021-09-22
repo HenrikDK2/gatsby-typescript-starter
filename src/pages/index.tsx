@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, css } from "goober";
+import { styled } from "goober";
 import { StaticImage } from "gatsby-plugin-image";
 import Seo from "../components/Seo";
 const Heading = styled("h2")`
@@ -12,17 +12,17 @@ const Heading = styled("h2")`
   }
 `;
 
-const imageStyle = css`
-  margin: 0 auto;
-  width: 256px;
-  display: block !important;
-`;
+const imageStyle: React.CSSProperties = {
+  margin: "0 auto",
+  width: "256px",
+  display: "block",
+};
 
 const HomePage: React.FC = () => (
   <Seo title="Homepage">
     <Heading>Gatsby Typescript Starter</Heading>
     <StaticImage
-      className={imageStyle}
+      style={imageStyle}
       placeholder="blurred"
       src="../images/icon.png"
       alt="Gatsby logo"
