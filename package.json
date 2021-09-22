@@ -14,9 +14,9 @@
   ],
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "shx rm -rf public && gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean && shx rm -rf node_modules public && npm i"
   },
   "dependencies": {
     "gatsby": "^3.13.0",
@@ -40,6 +40,7 @@
     "gatsby-transformer-json": "^3.13.0",
     "gatsby-transformer-sharp": "^3.13.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "shx": "^0.3.3"
   }
 }
