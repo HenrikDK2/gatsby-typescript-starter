@@ -2,8 +2,8 @@
   "name": "gatsby-typescript-starter",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-typescript-starter",
-  "author": "HenrikDK2",
+  "description": "Stricly typed gatsby template that is small and fast",
+  "author": "Henrik Mundt Milo",
   "keywords": [
     "gatsby",
     "starter",
