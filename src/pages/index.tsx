@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { styled } from "goober";
 import { StaticImage } from "gatsby-plugin-image";
 import Seo from "../components/Seo";
