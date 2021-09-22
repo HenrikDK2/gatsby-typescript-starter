@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "start": "gatsby develop",
-    "build": "shx rm -rf public && gatsby build",
+    "build": "shx rm -rf public .cache && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean && shx rm -rf node_modules public && npm i"
   },
@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.2",
-    "gatsby-plugin-manifest": "^3.14.0",
     "gatsby-plugin-optimize-svgs": "^1.0.5",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-plugin-typescript": "^3.13.0",

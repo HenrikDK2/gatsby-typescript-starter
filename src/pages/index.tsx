@@ -26,7 +26,7 @@ const HomePage: React.FC = () => (
     <StaticImage
       style={imageStyle}
       placeholder="blurred"
-      src="../images/icon.png"
+      src="../images/gatsby.png"
       alt="Gatsby logo"
     />
   </Seo>
