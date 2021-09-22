@@ -27,6 +27,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-goober`,
+    "gatsby-plugin-remove-trailing-slashes",
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-image",
     "gatsby-plugin-purgecss",
