@@ -21,7 +21,7 @@ const Seo: React.FunctionComponent<Props> = ({ title, description, tags, favicon
       <meta name="description" content={description || "Default Description"} />
       <meta name="keywords" content={tags || "Default, Tags"} />
       <meta name="author" content="Author Name" />
-      <link rel="shortcut icon" type="image/png" href={faviconSrc || favicon} />
+      <link rel="shortcut icon" type="image/png" href={favicon || faviconSrc} />
     </Helmet>
     <Layout>{children}</Layout>
   </>
