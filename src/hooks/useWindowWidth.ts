@@ -11,9 +11,11 @@ export function useWindowWidth(updatePoint: UpdatePoint) {
     if (window.innerWidth === width) return;
     if (window.innerWidth < updatePoint || width > updatePoint) setWidth(window.innerWidth);
   };
+
   useLayoutEffect(() => {
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
+
   return width;
 }
