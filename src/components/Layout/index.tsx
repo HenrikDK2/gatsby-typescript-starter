@@ -10,11 +10,7 @@ const Copyright = styled("small")`
   display: block;
 `;
 
-interface Props {
-  children: any;
-}
-
-const Layout: React.FunctionComponent<Props> = ({ children }) => {
+const Layout: React.FunctionComponent = ({ children }) => {
   const year = new Date().getFullYear();
 
   return (
