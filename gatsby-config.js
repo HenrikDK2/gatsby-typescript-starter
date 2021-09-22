@@ -9,6 +9,7 @@ module.exports = {
         allExtensions: true,
       },
     },
+    `gatsby-plugin-goober`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-image",
     "gatsby-plugin-optimize-svgs",
