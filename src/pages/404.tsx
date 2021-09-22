@@ -26,7 +26,7 @@ const linkStyle = css`
 const NotFoundPage: React.FunctionComponent = () => (
   <Seo title="404">
     <Heading>
-      Page not found{" "}
+      Page not found
       <span role="img" aria-label="Sad smiley">
         😢
       </span>
