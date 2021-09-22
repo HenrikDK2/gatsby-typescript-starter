@@ -1,10 +1,8 @@
 import * as React from "react";
 import { styled } from "goober";
-import "@fontsource/roboto";
 import "./global.css";
 
 const Copyright = styled("small")`
-  font-weight: 300;
   font-size: 14px;
   line-height: 135%;
   text-align: center;

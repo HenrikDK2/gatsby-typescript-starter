@@ -9,6 +9,23 @@ module.exports = {
         allExtensions: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["400", "700"],
+              strategy: "selfHosted",
+            },
+          ],
+        },
+        formats: ["woff2"],
+        useMinify: true,
+        usePreload: true,
+      },
+    },
     `gatsby-plugin-goober`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-image",
