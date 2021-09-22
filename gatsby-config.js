@@ -21,6 +21,7 @@ module.exports = {
             },
           ],
         },
+        formats: ["woff"],
         useMinify: true,
         usePreload: true,
       },

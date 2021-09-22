@@ -2,7 +2,7 @@
   "include": ["src/**/**/*"],
   "compilerOptions": {
     "module": "ESNext",
-    "target": "ES2021",
+    "target": "ES5",
     "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
