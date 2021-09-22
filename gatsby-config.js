@@ -29,6 +29,7 @@ module.exports = {
     `gatsby-plugin-goober`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-image",
+    "gatsby-plugin-purgecss",
     "gatsby-plugin-optimize-svgs",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",

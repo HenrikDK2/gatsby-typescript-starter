@@ -33,6 +33,7 @@
   "devDependencies": {
     "@types/react-helmet": "^6.1.2",
     "gatsby-plugin-optimize-svgs": "^1.0.5",
+    "gatsby-plugin-purgecss": "^6.0.2",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-plugin-typescript": "^3.13.0",
     "gatsby-source-filesystem": "^3.13.0",
