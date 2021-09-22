@@ -1,6 +1,6 @@
 import * as React from "react";
-import Seo from "../components/Seo";
 import { styled } from "goober";
+import Seo from "../components/Seo";
 
 const Heading = styled("h2")`
   text-align: center;

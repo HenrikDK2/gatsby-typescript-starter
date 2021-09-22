@@ -1,0 +1,8 @@
+body {
+  font-family: roboto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}

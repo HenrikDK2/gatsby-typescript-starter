@@ -10,7 +10,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-goober`,
     "gatsby-plugin-image",
     "gatsby-plugin-optimize-svgs",
     "gatsby-plugin-sharp",
