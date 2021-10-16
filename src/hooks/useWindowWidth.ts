@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type UpdatePoint = number;
 const isBrowser = typeof window !== "undefined";
@@ -7,13 +7,22 @@ const isBrowser = typeof window !== "undefined";
 export function useWindowWidth(updatePoint: UpdatePoint): number {
   const [width, setWidth] = useState(isBrowser ? window.innerWidth : 500);
 
-  const updateWidth = () => {
-    if (window.innerWidth === width) return;
-    if (window.innerWidth < updatePoint || width > updatePoint) setWidth(window.innerWidth);
-  };
-  useLayoutEffect(() => {
+  useEffect(() => {
+    const updateWidth = () => {
+      const innerWidth = window.innerWidth;
+      if (
+        innerWidth === width ||
+        (innerWidth > updatePoint && width > updatePoint) ||
+        (innerWidth < updatePoint && width < updatePoint)
+      ) {
+        return;
+      }
+
+      setWidth(innerWidth);
+    };
+
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
-  }, []);
+  }, [width]);
   return width;
 }
